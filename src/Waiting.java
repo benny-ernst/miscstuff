@@ -11,7 +11,7 @@ public class Waiting {
         System.out.println("P1: How are you?");
         pause();
         System.out.println("P2: good");
-        pause(-500);
+        pause(-1000);
         System.out.println("P2: u?");
         pause();
         System.out.println("P1: Good!");
@@ -26,7 +26,7 @@ public class Waiting {
     public static void pause(int extraTime) throws InterruptedException
     {
         Random rand = new Random();
-        int randomNum = rand.nextInt(3000)+500+extraTime;
+        int randomNum = rand.nextInt(3000)+1000+extraTime;
         TimeUnit.MILLISECONDS.sleep(randomNum);
         
     }
